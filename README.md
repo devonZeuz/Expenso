@@ -141,15 +141,14 @@ Note: On free hosting, the first request after a period of inactivity may take 1
 - Email: demo@example.com
 - Password: Demo@123
 
-(Update these to a real demo user if you prefer.)
 
 ## Deployment Notes (Render)
 
 - Frontend env:
   - `VITE_BASE_URL=https://expenso-yq33.onrender.com`
 - Backend env:
-  - `MONGO_URI=...` (your Atlas URI)
-  - `JWT_SECRET=...` (random string)
+  - `MONGO_URI=...` 
+  - `JWT_SECRET=...` 
   - `CLIENT_URL=https://expenso-frontend.onrender.com`
   - Do not set `PORT` (Render provides it automatically)
 - SPA routing: add a rewrite rule on the Static Site → Redirects/Rewrites:

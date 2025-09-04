@@ -81,6 +81,17 @@ const AuthLayout = ({ children }) => {
               <LuExternalLink className="text-xs opacity-60 group-hover:opacity-100" />
             </a>
 
+            <a 
+              href="https://www.youtube.com/watch?v=FVpEDSlGG5k" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-black/70 hover:text-[#FF3200] transition-colors group text-xs cursor-pointer"
+            >
+              <div className="w-2 h-2 bg-[#FF3200] rounded-full flex-shrink-0"></div>
+              <span className="flex-1">How to host using Render</span>
+              <LuExternalLink className="text-xs opacity-60 group-hover:opacity-100" />
+            </a>
+
           
           </div>
         </div>
