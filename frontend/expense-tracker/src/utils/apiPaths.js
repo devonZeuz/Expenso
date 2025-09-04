@@ -1,5 +1,7 @@
+// Vite uses import.meta.env with the VITE_ prefix for runtime env vars
 export const BASE_URL =
-  process.env.REACT_APP_BASE_URL || "http://localhost:8000";
+  (typeof import.meta !== "undefined" && import.meta.env?.VITE_BASE_URL) ||
+  "http://localhost:8000";
 
 // utils/apiPath.js
 export const API_PATHS = {
