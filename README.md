@@ -129,6 +129,32 @@ Expenso-Alt/
 - `GET /api/dashboard` - Get dashboard data
 
 
+## Live Demo
+
+- Frontend: https://expenso-frontend.onrender.com
+- Backend (reference): https://expenso-yq33.onrender.com
+
+Note: On free hosting, the first request after a period of inactivity may take 10–60s due to cold starts.
+
+## Demo Credentials
+
+- Email: demo@example.com
+- Password: Demo@123
+
+(Update these to a real demo user if you prefer.)
+
+## Deployment Notes (Render)
+
+- Frontend env:
+  - `VITE_BASE_URL=https://expenso-yq33.onrender.com`
+- Backend env:
+  - `MONGO_URI=...` (your Atlas URI)
+  - `JWT_SECRET=...` (random string)
+  - `CLIENT_URL=https://expenso-frontend.onrender.com`
+  - Do not set `PORT` (Render provides it automatically)
+- SPA routing: add a rewrite rule on the Static Site → Redirects/Rewrites:
+  - Source: `/*` → Destination: `/index.html` → Action: `Rewrite`
+
 ## License
 
 This project is open source and available under the MIT License.
